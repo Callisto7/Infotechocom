@@ -572,7 +572,7 @@ a:hover, a:active {
   .man-banner {
     height: 162px!important;
     width: 148px!important;
-    left: 227px!important;
+    left: 207px!important;
     top: 358px!important;
     position: relative!important;
     background-size: contain!important;
@@ -592,7 +592,7 @@ a:hover, a:active {
 }
 
 .commercial-banner {
-  background-image: url('../images/slider/slider.png');
+  background-image: url('../images/header/slider.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -655,20 +655,32 @@ a:hover, a:active {
 }
 
 .man-banner {
-  background-image: url('../images/banner/need_help.svg');
+  background-image: url('../images/header/operator.svg');
   position: absolute;
   width: 420px;
   height: 461px;
-  left: 843px;
+  right: 20px;
   top: 158px;
+}
+
+@media only screen and (min-width: 1500px) {
+  .man-banner {
+    right: 200px;
+  }
 }
 
 .icon-feature {
   padding-top: 30px;
 }
 
-.icons {
-  align-items: center;
+.icons div {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .icons img {
+    width: 100px;
+  }
 }
 
 .about-us-info {
@@ -677,12 +689,8 @@ a:hover, a:active {
 }
 
 .polygon-rectangle {
-  /*background-image: url(../images/advantage/6.png);*/
   position: absolute;
-  width: 424px;
-  height: 503px;
-  border-radius: 54px;
-  top: -102px;
+  top: -69px;
   left: 42px;
 }
 
@@ -712,6 +720,26 @@ a:hover, a:active {
   z-index: 99;
 }
 
+@media(max-width: 991px) {
+  .about-us-info {
+    padding: 50px 0 100px 0;
+  }
+
+  .about-us-info .polygon-image img {
+    max-width: 342px;
+    position: relative;
+    top: -25px;
+  }
+
+  .about-us-info .polygon-rectangle {
+    top: 15px;
+    left: 70px;
+  }
+
+  .about-us-info .polygon-rectangle img{
+    height: 185px;
+  }
+}
 
 .services-our h1 {
   font-family: Montserrat;
@@ -812,12 +840,7 @@ a:hover, a:active {
 
 
 .our-team .consultants {
-  height: 328px;
   margin: -48px 11px 13px 110px;
-  width: 338px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
 .our-team p  {
@@ -841,7 +864,7 @@ a:hover, a:active {
 }
 
 .engineers {
-  padding: 40px 0 0 40px;
+  padding: 0 40px;
 }
 
 .engineers ul {
@@ -863,13 +886,16 @@ a:hover, a:active {
 
 }
 
-.our-advantages  {
-  height: 292px;
-  margin-bottom: 100px;
+.engineers p {
+  padding-bottom: 32px;
 }
 
-.our-advantages .adv-icons {
-  padding-bottom: 100px;
+.team-engineers ul {
+  padding-bottom: 35px;
+}
+
+.our-advantages  {
+  margin-bottom: 70px;
 }
 
 .our-advantages h1 {
@@ -903,64 +929,54 @@ a:hover, a:active {
   margin-right: 24px;
 }
 
-.advantage-image {
-  height: 550px;
-  background: #F7FAFD;
-  display: flex;
-  padding-bottom: 100px;
-  padding: 79px 0 79px 0;
+@media only screen and (max-width: 991px) {
+  .our-advantages h1 {
+    font-size: 26px;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .our-advantages .adv  {
+    margin-left: 24px;
+    margin-bottom: 20px;
+    justify-content: left;
+  }
+
+  .our-advantages .advantage {
+    margin-left: 20px;
+  }
+
+  .services__second-child .col-12 {
+    border-bottom: 3px solid white;
+  }
 }
 
-.advantage-image .membership {
-  width: 570px;
-  height: 380px;
-  background: #FEFFFF;
-  box-shadow: 0px 13px 33px rgba(39, 79, 139, 0.19);
-  border-radius: 20px;
-  padding: 32px;
-  display: flex;
-  justify-content: center;
-  z-index: 99;
+.advantage-image {
+  background: #F7FAFD;
+  padding: 20px 15px;
 }
 
 .info-area {
-  display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.advantage-image .text-info-area h1{
-  width: 434px;
-  height: 160px;
-  line-height: 40px;
+.advantage-image h2 {
   color: #397093;
-  font-size: 32px;
+  margin-top: 50px;
 }
 
-.text-info-area .title {
-  position: relative;
-  float: right;
-}
-
-.advantage-image .text-info-area p {
+.advantage-image p {
   width: 350px;
   height: 72px;
   font-size: 15px;
   line-height: 24px;
   color: #112748;
 }
-.advantage-image .rectangle {
-  background-image: url(../images/advantage/6.png);
-  position: absolute;
-  width: 561px;
-  height: 539px;
-  left: 533px;
-  border-radius: 54px;
-}
 
 .footer-top {
-  margin-bottom: 100px;
+  margin-top: 50px;
 }
 
 .footer-top h1 {
@@ -983,10 +999,10 @@ a:hover, a:active {
   color: #888888;
 }
 
-.footer-top .contacts {
-  display: flex;
-  justify-content: space-between;
-}
+/*.footer-top .contacts {*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*}*/
 
 .footer-top p {
   width: 394px;
@@ -1006,12 +1022,10 @@ footer ul {
 }
 
 .footer-bottom {
-  height: 112px;
   background: #333333;
 }
 
 .copy {
-  height: 112px;
   padding: 27px 20px;
 }
 
@@ -1023,3 +1037,61 @@ footer ul {
   color: #9E9E9E;
 }
 
+@media only screen and (max-width: 991px) {
+  .our-team .consultants {
+    text-align: right;
+    margin: 0;
+  }
+
+ .our-team .text-title{
+    padding: 0 30px;
+  }
+
+  .our-team p {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .our-team h1 {
+    font-size: 22px;
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+
+  .our-team .time_block > .with_consultant {
+    flex-direction: column-reverse;
+    border-bottom: 5px solid #F7FAFD;
+  }
+
+  .time_block img {
+    max-width: 50%;
+  }
+
+  .our-team .engineers {
+    padding: 0 20px;
+  }
+
+  .advantage-image .hidden-lg {
+    display: none !important;
+  }
+
+  .advantage-image p {
+    width: auto;
+  }
+
+  .about-company p, .contact-info p, .about-company span, .contact-info span {
+    width: auto;
+    height: auto;
+    font-size: 15px;
+  }
+
+  div h1, div h2 {
+    font-size: 22px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .advantage-image .hidden-non-lg {
+    display: none !important;
+  }
+}
