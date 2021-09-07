@@ -468,6 +468,14 @@ a:hover, a:active {
     background: #fff;
   }
 
+  .mobile_nav .collapse {
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    position: absolute;
+    border-bottom-right-radius: 40px;
+    left: 0px;
+  }
+
   .header_mobile .mobile_nav .mobile_mainmenu {
     margin: 0;
     padding: 0;
@@ -490,7 +498,7 @@ a:hover, a:active {
   }
 
   .header_mobile .mobile_nav .mobile_mainmenu li a {
-    padding: 9px 0;
+    padding: 18px 0;
     display: block;
     color: #001738;
     white-space: nowrap;
@@ -502,10 +510,27 @@ a:hover, a:active {
     text-align: center;
   }
 
+  .collapse {
+    width: 100%!important;
+    border-bottom-left-radius: 40px!important;
+    position: absolute!important;
+    border-bottom-right-radius: 40px!important;
+    left: 0px!important;
+  }
 }
+
+
 @media only screen and (max-width: 767px) {
   .header_mobile .mlogo_wrapper {
     width: 100%;
+  }
+
+  .mobile_nav .collapse {
+    width: 100%!important;
+    border-bottom-left-radius: 40px!important;
+    position: absolute!important;
+    border-bottom-right-radius: 40px!important;
+    left: 0px!important;
   }
 
   .ser-feature-icon {
@@ -528,7 +553,6 @@ a:hover, a:active {
     width: 284px;
     height: 84px;
     top: -120px;
-    left: 20px;
     font-size: 24px!important;
     line-height: 28px!important;
     position: relative;
@@ -547,24 +571,13 @@ a:hover, a:active {
     width: 280px;
     height: 72px;
     top: -100px;
-    left: 20px;
   }
 
   .to-contact {
     position: relative;
     width: 140.97px!important;
     height: 56px!important;
-    left: 20px!important;
     top: 355px!important;
-  }
-
-  .man-banner {
-    height: 162px!important;
-    width: 148px!important;
-    left: 172px!important;
-    top: 358px!important;
-    position: relative!important;
-    background-size: contain!important;
   }
 }
 
@@ -573,7 +586,7 @@ a:hover, a:active {
   .man-banner {
     height: 162px!important;
     width: 148px!important;
-    left: 207px!important;
+    left: 157px!important;
     top: 358px!important;
     position: relative!important;
     background-size: contain!important;
@@ -589,7 +602,11 @@ a:hover, a:active {
     height: 251px!important;
     top: 1311px!important;
     left: 20px;
-}
+  }
+
+  .hidden-arrow {
+    display: none;
+  }
 }
 
 .commercial-banner {
@@ -606,7 +623,7 @@ a:hover, a:active {
   height: inherit;
   content: "";
   position: absolute;
-  background-color: rgb(33 32 30 / 92%);
+  background-color: rgb(51 51 51 / 50%);
 
 }
 
@@ -674,8 +691,18 @@ a:hover, a:active {
   padding-top: 30px;
 }
 
+.arrow-top-angle {
+  position: absolute;
+  right: 50px;
+  top: 678px;
+}
+
 .icons div {
   text-align: center;
+}
+
+.icons {
+  align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -727,7 +754,7 @@ a:hover, a:active {
   }
 
   .about-us-info .polygon-image img {
-    max-width: 342px;
+    max-width: 300px;
     position: relative;
     top: -25px;
   }
@@ -841,7 +868,11 @@ a:hover, a:active {
 
 
 .our-team .consultants {
-  margin: -48px 11px 13px 110px;
+  margin: -34px 0 0 0;
+}
+
+.with_consultant {
+  border-bottom: 11px solid#F7FAFD;
 }
 
 .our-team p  {
@@ -852,7 +883,7 @@ a:hover, a:active {
 }
 
 .our-team .text-title {
-  padding: 80px 86px 0 0;
+  padding: 80px 0 0 0;
 }
 
 .engineers p.descr {
@@ -865,7 +896,7 @@ a:hover, a:active {
 }
 
 .engineers {
-  padding: 0 40px;
+  padding: 0 87px;
 }
 
 .engineers ul {
@@ -897,6 +928,10 @@ a:hover, a:active {
 
 .our-advantages  {
   margin-bottom: 70px;
+}
+
+.advantage img {
+  margin-bottom: 16px;
 }
 
 .our-advantages h1 {
@@ -955,7 +990,18 @@ a:hover, a:active {
 .advantage-image {
   background: #F7FAFD;
   padding: 20px 15px;
+  height: 518px;
+  display: flex;
+  align-items: center;
 }
+
+.advantage-image img {
+  position: absolute;
+  top: 40px;
+  z-index: 99;
+  left: 60px;
+}
+
 
 .info-area {
   display: flex;
@@ -966,14 +1012,38 @@ a:hover, a:active {
 .advantage-image h2 {
   color: #397093;
   margin-top: 50px;
+  max-width: 434px;
 }
 
 .advantage-image p {
-  /*width: 350px;*/
+  max-width: 350px;
   height: 72px;
   font-size: 15px;
   line-height: 24px;
   color: #112748;
+}
+
+.clients {
+  width: 134px;
+  height: 48px;
+  background: #FFFFFF;
+  box-shadow: 0px 13px 33px rgba(39, 79, 139, 0.19);
+  border-radius: 11px;
+  border: none;
+}
+
+.clients a {
+  color: #464646;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  float: left;
+}
+
+.clients svg {
+  margin-left: 30px;
 }
 
 .footer-top {
@@ -1000,10 +1070,6 @@ a:hover, a:active {
   color: #888888;
 }
 
-/*.footer-top .contacts {*/
-/*  display: flex;*/
-/*  justify-content: space-between;*/
-/*}*/
 
 .footer-top p {
   width: 394px;
@@ -1027,7 +1093,7 @@ footer ul {
 }
 
 .copy {
-  padding: 27px 20px;
+  padding: 27px 0;
 }
 
 .copy p {
@@ -1038,24 +1104,57 @@ footer ul {
   color: #9E9E9E;
 }
 
+p >span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #9E9E9E;
+  opacity: 0.3;
+}
+
+p.flaticon > a {
+  color: #9E9E9E;
+}
+
+p.flaticon > a:hover {
+  color: inherit;
+}
+
+.contact-info li > a {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 991px) {
   .our-team .consultants {
-    text-align: right;
+    text-align: center;
     margin: 0;
+  }
+
+  .arrow-top-angle {
+    right: 15px;
+  }
+
+  .advantage-image {
+    align-items: flex-start;
+    height: 650px;
   }
 
  .our-team .text-title{
     padding: 0 30px;
   }
 
+  .btn-group {
+    position: absolute;
+    bottom: -230px;
+  }
+
   .our-team p {
-    width: auto;
-    font-size: 12px;
+    width: 232px;
+    font-size: 15px;
   }
 
   .our-team h1 {
     font-size: 22px;
-    margin-bottom: 0;
+    margin-bottom: 24px;
     margin-top: 30px;
   }
 
@@ -1066,6 +1165,8 @@ footer ul {
 
   .time_block img {
     max-width: 50%;
+    position: relative;
+    left: 60px;
   }
 
   .our-team .engineers {
@@ -1077,7 +1178,19 @@ footer ul {
   }
 
   .advantage-image p {
-    width: auto;
+    width: 280px;
+    top: 250px;
+    position: relative;
+    left: -13px;
+    font-size: 12px;
+  }
+
+
+  .advantage-image img {
+    max-width: 230px;
+    max-height: 230px;
+    top: 0;
+    left: 50px;
   }
 
   .about-company p, .contact-info p, .about-company span, .contact-info span {
@@ -1088,11 +1201,16 @@ footer ul {
 
   div h1, div h2 {
     font-size: 22px !important;
+    width: 280px!important;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .advantage-image .hidden-non-lg {
     display: none !important;
+  }
+
+  .advantage-image {
+    align-items: flex-start;
   }
 }
