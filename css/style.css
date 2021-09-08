@@ -1178,19 +1178,18 @@ p.flaticon > a:hover {
   }
 
   .advantage-image p {
-    width: 280px;
-    top: 250px;
+    width: 290px;
+    top: 270px;
     position: relative;
     left: -13px;
-    font-size: 12px;
   }
 
 
   .advantage-image img {
-    max-width: 230px;
-    max-height: 230px;
-    top: 0;
-    left: 50px;
+    max-width: 280px;
+    max-height: 280px;
+    top: -30px;
+    left: 0;
   }
 
   .about-company p, .contact-info p, .about-company span, .contact-info span {
