@@ -982,6 +982,10 @@ a:hover, a:active {
   .services__second-child .col-12 {
     border-bottom: 3px solid white;
   }
+
+  .clients {
+    width: 150px!important;
+  }
 }
 
 .advantage-image {
