@@ -584,12 +584,12 @@ a:hover, a:active {
 
 @media only screen and (max-width: 569px) {
   .man-banner {
-    height: 162px!important;
-    width: 148px!important;
-    left: 157px!important;
-    top: 358px!important;
+    max-height: 200px!important;
+    max-width: 170px!important;
+    left: 127px!important;
+    top: 320px!important;
     position: relative!important;
-    background-size: contain!important;
+    background-size: cover!important;
   }
 
   .about-us .content-about {
@@ -602,10 +602,6 @@ a:hover, a:active {
     height: 251px!important;
     top: 1311px!important;
     left: 20px;
-  }
-
-  .hidden-arrow {
-    display: none;
   }
 }
 
@@ -692,9 +688,10 @@ a:hover, a:active {
 }
 
 .arrow-top-angle {
-  position: absolute;
+  position: fixed;
   right: 50px;
-  top: 678px;
+  z-index: 99;
+  bottom: 0;
 }
 
 .icons div {
@@ -931,7 +928,7 @@ a:hover, a:active {
 }
 
 .advantage img {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .our-advantages h1 {
@@ -962,7 +959,7 @@ a:hover, a:active {
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-right: 24px;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1039,11 +1036,6 @@ a:hover, a:active {
   font-weight: bold;
   font-size: 12px;
   line-height: 24px;
-  float: left;
-}
-
-.clients svg {
-  margin-left: 30px;
 }
 
 .footer-top {
@@ -1164,9 +1156,8 @@ p.flaticon > a:hover {
   }
 
   .time_block img {
-    max-width: 50%;
     position: relative;
-    left: 60px;
+    left: 0;
   }
 
   .our-team .engineers {
@@ -1186,10 +1177,9 @@ p.flaticon > a:hover {
 
 
   .advantage-image img {
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 85%;
+    left: 25px;
     top: -30px;
-    left: 0;
   }
 
   .about-company p, .contact-info p, .about-company span, .contact-info span {
