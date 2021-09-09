@@ -849,7 +849,7 @@ a:hover, a:active {
 
 .our-team {
   background: #F7FAFD;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .our-team h1 {
@@ -1123,6 +1123,10 @@ p.flaticon > a:hover {
   .our-team .consultants {
     text-align: center;
     margin: 0;
+  }
+
+  .our-team {
+    margin-bottom: 50px;
   }
 
   .arrow-top-angle {
