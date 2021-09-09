@@ -985,6 +985,7 @@ a:hover, a:active {
 
   .clients {
     display: block;
+    width: 150px!important;
   }
 }
 
