@@ -982,12 +982,6 @@ a:hover, a:active {
   .services__second-child .col-12 {
     border-bottom: 3px solid white;
   }
-
-  .clients {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
 }
 
 .advantage-image {
@@ -1042,6 +1036,10 @@ a:hover, a:active {
   font-weight: bold;
   font-size: 12px;
   line-height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-top {
