@@ -984,7 +984,7 @@ a:hover, a:active {
   }
 
   .clients {
-    width: 150px!important;
+    display: block;
   }
 }
 
@@ -1140,7 +1140,7 @@ p.flaticon > a:hover {
 
   .btn-group {
     position: absolute;
-    bottom: -230px;
+    bottom: -330px;
   }
 
   .our-team p {
