@@ -1125,8 +1125,25 @@ p.flaticon > a:hover {
     margin: 0;
   }
 
+
   .our-team {
     margin-bottom: 50px;
+  }
+
+  .services-our {
+    padding-top: 50px;
+  }
+
+  .services-our h1 {
+    margin-bottom: 20px!important;
+  }
+
+  .services-our {
+    padding-bottom: 50px;
+  }
+
+  .our-mar {
+    padding-top: 5px!important;
   }
 
   .arrow-top-angle {
