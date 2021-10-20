@@ -747,7 +747,7 @@ a:hover, a:active {
 
 @media(max-width: 991px) {
   .about-us-info {
-    padding: 50px 0 100px 0;
+    padding: 50px 0 0 0;
   }
 
   .about-us-info .polygon-image img {
